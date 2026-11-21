@@ -1,0 +1,33 @@
+{
+  "name": "@anistack72/security-report-kit",
+  "version": "0.1.0",
+  "description": "Normalize Gitleaks, Trivy and Semgrep reports, redact secret fields and compare baselines.",
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "bin": {
+    "security-report-kit": "./cli.mjs"
+  },
+  "exports": "./index.mjs",
+  "scripts": {
+    "test": "node --test",
+    "check": "node --check cli.mjs && node --check index.mjs",
+    "demo": "node demo.mjs"
+  },
+  "files": [
+    "cli.mjs",
+    "index.mjs",
+    "support.mjs",
+    "README.md",
+    "LICENSE",
+    "header.png",
+    "demo.mjs"
+  ],
+  "license": "MIT",
+  "author": "Anis Mosbah",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/anistack72/security-report-kit.git"
+  }
+}
